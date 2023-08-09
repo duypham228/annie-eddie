@@ -1,0 +1,1 @@
+web gunicorn annieeddie.wsgi:application --log-file -
