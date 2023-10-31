@@ -1,9 +1,71 @@
 <html>
-<head>
+  <head>
     <title>Home</title>
-</head>
-<body>
-    <h1>Annie & Eddie</h1>
-    <p>Howdy, This is the beginning of us!</p>
-</body>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+        <h1>Annie and Eddie</h1>
+        <p>This is the beginning of us!</p>
+        <div class="row mt-5">
+            <!-- Column for "Him" -->
+            <div class="col-md-6">
+                <img src="{% static 'img/her.jpg' %}" alt="Him" class="img-fluid" height="500">
+                <h2 class="text-center mt-3">Annie</h2>
+            </div>
+            <!-- Column for "Her" -->
+            <div class="col-md-6">
+                <img src="{% static 'img/him.jpg' %}" alt="Her" class="img-fluid" height="500">
+                <h2 class="text-center mt-3">Eddie</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Line Divider-->
+    <div class="container">
+      <hr />
+    </div>
+    <!-- Count Days -->
+
+    <div class="container">
+      <div class="love-day-clock">
+        <h1>Love Days</h1>
+        <p class="days-counter">0 days</p>
+        <p class="time-counter">
+          <span class="hours">0</span> hours
+          <span class="minutes">0</span> minutes
+          <span class="seconds">0</span> seconds
+        </p>
+      </div>
+    </div>
+
+    <!-- Section Line Divider-->
+    <div class="container">
+      <hr />
+    </div>
+
+    <!-- Section Love Story -->
+    <div class="container">
+      <h1>Our Love Story</h1>
+      <p> Coming Soon... </p>
+
+    <!-- Section Line Divider-->
+    <div class="container">
+      <hr />
+    </div>
+
+    
+
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
 </html>

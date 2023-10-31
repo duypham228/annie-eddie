@@ -58,7 +58,14 @@ ROOT_URLCONF = 'annieeddie.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            # Project Level Templates
+            os.path.join(BASE_DIR, 'templates'),
+
+            # App Level Templates
+            os.path.join(BASE_DIR, 'home/templates'),
+
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
