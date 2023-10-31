@@ -18,3 +18,8 @@ body {
 h1 {
   color: #ff5c8d;
 }
+
+.days-counter {
+  font-size: 36px;
+  color: #333;
+}
